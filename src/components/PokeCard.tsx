@@ -23,7 +23,7 @@ const PokeCard: React.FC<Props> = ({ pokemon }) => {
   };
 
   return (
-    <div className={`relative rounded-3xl py-8 px-4 hover:scale-105 transition ease-in duration-300 cursor-pointer overflow-hidden bg-gradient-to-r ${getGradientFromAbility(pokemon.types[0].type.name)}`}>
+    <div className={`relative rounded-3xl py-8 px-4 hover:scale-105 transition ease-in duration-300 cursor-pointer overflow-hidden bg-gradient-to-r ${getGradientFromAbility(pokemon.types[0].type.name)} h-full`}>
       <div className="absolute -right-14 w-64 h-64 bg-white bg-opacity-40 rounded-full opacity-50"></div>
             
       <div className="absolute inset-0 sm:py-4 sm:px-2 flex justify-end items-center">
