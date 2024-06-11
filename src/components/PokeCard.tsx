@@ -30,7 +30,7 @@ const PokeCard: React.FC<Props> = ({ pokemon }) => {
         <img 
           src={pokemon.sprites.other["official-artwork"].front_default}
           alt={capitalizeFirstChar(pokemon.name)}
-          className="h-2 md:h-36 lg:max-h-full 4"
+          className="h-24 md:h-36 lg:max-h-full"
         />
       </div>
       
