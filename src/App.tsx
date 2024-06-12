@@ -3,6 +3,7 @@ import PokeCard from "./components/PokeCard";
 import { Pokemon } from "./types/types";
 import Pagination from "./components/Pagination";
 import { Link } from "react-router-dom";
+import Loader from "./components/Loader";
 
 function App() {
   const [pokeData, setPokeData] = useState<Pokemon[]>([]);
@@ -56,10 +57,7 @@ function App() {
       </section>
 
       {loading ? (
-        <div className="w-full h-screen flex flex-col items-center justify-center">
-          <img src="/pokeball.png" alt="Pokeball" className="animate-bounce w-16" />
-          <p className="font-bold animate-pulse">loading...</p>
-        </div>
+        <Loader />
       ) : (
         <section className="grid md:grid-cols-3 xl:grid-cols-4 grid-cols-2 sm:gap-4 gap-2 my-4">
           {pokeData.map((pokemon) => (

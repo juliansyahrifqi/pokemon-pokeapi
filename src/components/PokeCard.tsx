@@ -41,7 +41,7 @@ const PokeCard: React.FC<Props> = ({ pokemon }) => {
           {pokemon.abilities.map((ability, index) => (
             <div
               key={index}
-              className="bg-white bg-opacity-30 text-white sm:px-4 px-2 py-1 rounded-full md:text-sm text-xs font-medium"
+              className="bg-white bg-opacity-30 text-white sm:px-4 px-2 py-1 rounded-full md:text-sm text-xs font-mediumt text-center"
             >
               {capitalizeFirstChar(ability.ability.name)}
             </div>

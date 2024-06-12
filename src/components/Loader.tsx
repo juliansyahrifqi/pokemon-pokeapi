@@ -1,4 +1,4 @@
-export default function Loader() {
+const Loader = () => {
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center">
       <img src="/pokeball.png" alt="Pokeball" className="animate-bounce w-16" />
@@ -6,3 +6,5 @@ export default function Loader() {
     </div>
   )
 }
+
+export default Loader;
