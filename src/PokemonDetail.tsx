@@ -149,9 +149,11 @@ const PokemonDetail = () => {
             <Tab.Panel>
               <PokemonStats pokemon={pokemon} />
             </Tab.Panel>
-            <Tab.Panel>
-              <PokemonEvolution evolutionData={evolutionData} evolutionChain={evolutionChain} />
-            </Tab.Panel>
+            {evolutionChain && (
+              <Tab.Panel>
+                <PokemonEvolution evolutionData={evolutionData} evolutionChain={evolutionChain} />
+              </Tab.Panel>
+            )}
             <Tab.Panel>
               <PokemonMoves pokemon={pokemon} />
             </Tab.Panel>
